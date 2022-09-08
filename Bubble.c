@@ -2,9 +2,9 @@
 
 #define N 10
 
-void quicksort1(int *vet);
-void quicksort2(int *vet);
-void quicksort3(int *vet);
+void bubble1(int *vet);
+void bubble2(int *vet);
+void bubble3(int *vet);
 
 int main(){
 
@@ -12,9 +12,9 @@ int main(){
     preenche(vet, 50);
     imprime(vet);
 
-    //quicksort1(vet);
-    //quicksort2(vet);
-    //quicksort3(vet);
+    //bubble1(vet);
+    //bubble2(vet);
+    //bubble3(vet);
 
     imprime(vet);
 
@@ -22,7 +22,7 @@ int main(){
 }
 
 
-void quicksort1(int *vet){
+void bubble1(int *vet){
     int i, j;
 
     for(i = 0; i < N; i++){
@@ -34,7 +34,7 @@ void quicksort1(int *vet){
     }
 }
 
-void quicksort2(int *vet){
+void bubble2(int *vet){
     int i, j;
 
     for(i = 0; i < N - 1; i++){
@@ -47,7 +47,7 @@ void quicksort2(int *vet){
 
 }
 
-void quicksort3(int *vet){
+void bubble3(int *vet){
     int i, j, stt = 1;
 
     for(i = 0; i < N - 1 && stt; i++){
